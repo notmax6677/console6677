@@ -1,13 +1,17 @@
-## installation
+#console6677
+i saw someone make a terminal style website on youtube so i also wanted to make one, as well as put my new SolidJS skills to the test
 
-Install the basic javascript vite SolidJS template via node:
-https://github.com/solidjs/templates
+![](preview.png?raw=true)
 
-Afterwards, just replace the `src` folder in the template with the `src` folder in this repo.
+so yeah, enjoy, you can visit the website hosted on github pages here!
 
-Finally, run:
-`npm install`
+i don't really have anything else to say lol, other than it took me about 30 commits to properly upload the project to this repo skull
 
-And you're good to go.
+##source download & installation
+1) clone the repo
 
-`npm run dev` to run a development server.
+2) cd into source
+
+3) run npm install
+
+4) done, run development server with npm run dev
