@@ -62,7 +62,7 @@ export default {
                 returnedMessage = "Opening github repository...";
                 // after half a second, open page
                 setTimeout(() => {
-                    window.open("https://google.com");
+                    window.open("https://github.com/notmax6677/console6677"); // url to github repository of this project
                 }, 500)
                 break;
 
