@@ -1,0 +1,77 @@
+#terminal {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
+}
+
+/* fixed terminal border */
+#border {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
+
+    border: 0.35em solid #f0e4f5; /* default theme color used */
+    margin: -0.35em; /* undo offset that border makes */
+}
+#border-padding {
+    position: absolute;
+    top: -0.35em;
+    left: -0.35em;
+
+    width: calc(100vw - 50px + 0.7em);
+    height: calc(100vh - 50px + 0.7em);
+
+    border: 50px solid #332b36; /* using default color */
+    margin: -50px;
+}
+
+/* slightly move all items within the terminal down and right */
+#terminal > #term-text > *, #input-line {
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+    display: inline;
+    width: fit-content;
+}
+
+/* transparent background created for the sole purpose of focusing on the input field when clicked on */
+#bg {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
+}
+
+/* name of user */
+.name {
+    /* default color, will be changed later */
+    color: #62e3b4;
+    margin-right: 10px;
+
+    display: inline;
+    width: fit-content;
+
+    font-weight: bold;
+}
+
+#input {
+    background: none;
+    border: none;
+    width: fit-content;
+    outline: none;
+}
+
+#input-line {
+    padding-bottom: 5em;
+}
+
+/* size of difference between input and bottom of screen */
+#scroll-follow {
+    margin-top: 5em;
+}
