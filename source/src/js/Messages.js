@@ -43,10 +43,10 @@ type `contact` for a bit of my contact info.",
     // name
     name: "guest@console6677 $",
 
-    // quotes
+    // spans
     spans: {
         help: " `help`",
         themeError: " `theme help`",
-        availableCommands: "Available commands: \n\n",
+        availableCommands: "Available commands:\n\n",
     }
 }

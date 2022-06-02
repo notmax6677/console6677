@@ -157,3 +157,8 @@ export default {
         return returnedMessage;
     }
 }
+
+// valid command strings
+export const validCommands = [
+    "help", "about", "clear", "github", "date", "echo", "contact", "welcome", "theme", "reboot"
+]
