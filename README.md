@@ -11,7 +11,7 @@ i don't really have anything else to say lol, other than it took me about 30 com
 
 1) clone the repo
 
-2) cd into source
+2) cd into `source`
 
 3) run `npm install`
 
