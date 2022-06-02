@@ -8,10 +8,10 @@ so yeah, enjoy, you can visit the website [hosted on github pages here.](https:/
 i don't really have anything else to say lol, other than it took me about 30 commits to properly upload the project to this repo 💀
 
 ## source download & installation
-1) clone the repo
+1) `git clone` the repo
 
-2) cd into source
+2) cd into `source`
 
-3) run npm install
+3) run `npm install`
 
-4) done, run development server with npm run dev
+4) done, run development server with `npm run dev`
