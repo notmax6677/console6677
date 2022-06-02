@@ -87,6 +87,16 @@ export default {
             case "welcome":
                 returnedMessage = "$welcome";
                 break;
+
+            // stats - show my github account's stats
+            case "stats":
+                returnedMessage = "$stats";
+                break;
+
+            // stats2 - show more of my stats
+            case "stats2":
+                returnedMessage = "$stats2";
+                break;
             
             // if there was no valid command, defaults to the "not a valid command" message
             default:
@@ -160,5 +170,5 @@ export default {
 
 // valid command strings
 export const validCommands = [
-    "help", "about", "clear", "github", "date", "echo", "contact", "welcome", "theme", "reboot"
+    "help", "about", "clear", "github", "date", "echo", "contact", "welcome", "stats", "stats2", "theme", "reboot"
 ]

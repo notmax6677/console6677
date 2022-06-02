@@ -21,6 +21,8 @@ date - check the date\n\
 echo - echo a message\n\
 contact - my contact details\n\
 welcome - show welcome text\n\
+stats - my github user's statistics\n\
+stats2 - more stats lol\n\
 theme - change the theme\n\
 reboot - reboot the console (reloads the page lol)",
     // theme help message

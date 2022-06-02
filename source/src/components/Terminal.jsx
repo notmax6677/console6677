@@ -125,6 +125,38 @@ export default function Terminal() {
                                 </p>
                             )
                         }
+                        else if(message === "$stats") { // return statistics image that is generated at my copy of a github-stats repo
+                            // original: https://github.com/jstrieb/github-stats
+
+                            // my copy: https://github.com/notmax6677/github-stats
+                            return (
+                                <div>
+                                    <img 
+                                    src="https://raw.githubusercontent.com/notmax6677/github-stats/8e6a9533a5d6068d8879a48f94b1ba03f5c96204/generated/overview.svg"
+                                    alt="user statistics">
+                                    </img>
+                                    
+                                    {/* two line breaks */}
+                                    <br></br><br></br>
+                                </div>
+                            )
+                        }
+                        else if(message === "$stats2") { // more stats LMAO
+                            // original: https://github.com/jstrieb/github-stats
+
+                            // my copy: https://github.com/notmax6677/github-stats
+                            return (
+                                <div>
+                                    <img 
+                                    src="https://raw.githubusercontent.com/notmax6677/github-stats/97f8afa4cf2545f9b017dbc974256901acc9c24f/generated/languages.svg"
+                                    alt="user statistics (languages version)">
+                                    </img>
+                                    
+                                    {/* two line breaks */}
+                                    <br></br><br></br>
+                                </div>
+                            )
+                        }
                         else {
                             return ( /* otherwise just create the message and add two line breaks afterwards */
                                 <p style={"color:"+Themes.current.col2}>
