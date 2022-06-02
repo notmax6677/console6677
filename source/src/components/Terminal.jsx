@@ -1,10 +1,12 @@
 import { createSignal, For } from "solid-js";
 import Messages from "../js/Messages";
 import InputLine from "./InputLine";
+import Themes from "../js/Themes";
 
 // css
 import "../css/Terminal.css"
-import Themes from "../js/Themes";
+import "../css/Stats.css"
+
 
 const messages = ["$welcome"]
 
@@ -133,7 +135,7 @@ export default function Terminal() {
                                 <div>
                                     <img 
                                     src="https://raw.githubusercontent.com/notmax6677/github-stats/8e6a9533a5d6068d8879a48f94b1ba03f5c96204/generated/overview.svg"
-                                    alt="user statistics">
+                                    alt="user statistics" class="stat-image">
                                     </img>
                                     
                                     {/* two line breaks */}
@@ -149,7 +151,7 @@ export default function Terminal() {
                                 <div>
                                     <img 
                                     src="https://raw.githubusercontent.com/notmax6677/github-stats/97f8afa4cf2545f9b017dbc974256901acc9c24f/generated/languages.svg"
-                                    alt="user statistics (languages version)">
+                                    alt="user statistics (languages version)" class="stat-image">
                                     </img>
                                     
                                     {/* two line breaks */}

@@ -1,0 +1,10 @@
+/* statistics image, just create intro animation upon creation */
+.stat-image {
+    animation: intro 0.8s;
+}
+
+/* actual intro keyframe */
+@keyframes intro {
+    from {opacity: 0; filter: blur(2px);}
+    to {opacity: 1; filter: blur(0);}
+}
