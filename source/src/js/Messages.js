@@ -13,8 +13,17 @@ Welcome to console6677!\n\
 Get started by typing `help`!",
 
     // help message
-    help: "Available commands: help, about, clear, github, date, echo, contact, theme, reboot",
-
+    help: "Available commands: \n\n\
+help - you just typed it\n\
+about - a little about me\n\
+clear - clear the console\n\
+github - link to this github repo\n\
+date - check the date\n\
+echo - echo a message\n\
+contact - my contact details\n\
+welcome - show welcome text\n\
+theme - change the theme\n\
+reboot - reboot the console (reloads the page lol)",
     // theme help message
     themeHelp: "Theme command, e.g: \ntheme [name] \n\nAvailable themes: [default, gruvbox, gruvbox-light, solarized, solarized-light, dracula]",
 

@@ -14,7 +14,7 @@
     width: calc(100vw - 50px);
     height: calc(100vh - 50px);
 
-    border: 0.35em solid #f0e4f5; /* default theme color used */
+    border: 0.35em solid #cfcfa1; /* default theme color used */
     margin: -0.35em; /* undo offset that border makes */
 }
 #border-padding {
@@ -25,7 +25,7 @@
     width: calc(100vw - 50px + 0.7em);
     height: calc(100vh - 50px + 0.7em);
 
-    border: 50px solid #332b36; /* using default color */
+    border: 50px solid #0a0a0d; /* using default color */
     margin: -50px;
 }
 
@@ -51,7 +51,7 @@
 /* name of user */
 .name {
     /* default color, will be changed later */
-    color: #62e3b4;
+    color: #b9e1ff;
     margin-right: 10px;
 
     display: inline;
@@ -63,7 +63,6 @@
 #input {
     background: none;
     border: none;
-    width: fit-content;
     outline: none;
 }
 

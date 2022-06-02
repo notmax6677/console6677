@@ -72,6 +72,7 @@ export default {
                 returnedMessage = weekDays[dateObject.getDay()] + " | " + dateObject.getDate() + " " + months[dateObject.getMonth()] + " | " + dateObject.getFullYear();
                 break;
 
+            // echo - use regular echo command to print message
             case "echo":
                 // if text inserted after "echo" isn't nil
                 if(brokenCommand[1] !== undefined && brokenCommand[1] !== "") {
@@ -80,6 +81,11 @@ export default {
                 else { // otherwise
                     returnedMessage = "echo syntax error.\n\ne.g:\n\necho [text]";
                 }
+                break;
+
+            // welcome - show welcome message
+            case "welcome":
+                returnedMessage = Messages.welcome;
                 break;
             
             // if there was no valid command, defaults to the "not a valid command" message

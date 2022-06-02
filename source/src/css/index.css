@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); /* Roboto Mono (they're different fonts lol) */
 
-* {
+*, p {
     margin: 0;
 
     /* font stuff */
-    color: #ffffff;
+    color: #cfcfa1;
     font-family: 'Roboto Mono', 'Roboto';
     font-size: 1em;
     white-space: pre-wrap;
 }
 
 body {
-    background-color: #332b36; /* default color used */
+    background-color: #0a0a0d; /* default color used */
     overflow-x: hidden;
 }
 

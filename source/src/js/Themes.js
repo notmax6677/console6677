@@ -1,9 +1,9 @@
 export default {
     // current
     default: {
-        col1: "#332b36",
-        col2: "#f0e4f5",
-        col3: "#62e3b4",
+        col1: "#0a0a0d",
+        col2: "#cfcfa1",
+        col3: "#b9e1ff",
     },
 
     // gruvbox
@@ -43,8 +43,8 @@ export default {
 
     // current
     current: {
-        col1: "#332b36",
-        col2: "#f0e4f5",
-        col3: "#62e3b4",
+        col1: "#0a0a0d",
+        col2: "#cfcfa1",
+        col3: "#b9e1ff",
     },
 }
