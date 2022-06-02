@@ -25,7 +25,7 @@ export default {
         switch(brokenCommand[0]) {
             // help - shows a help message with available commands
             case "help":
-                returnedMessage = Messages.help;
+                returnedMessage = "$help";
                 break;
             
             // about - return an about message
@@ -85,7 +85,7 @@ export default {
 
             // welcome - show welcome message
             case "welcome":
-                returnedMessage = Messages.welcome;
+                returnedMessage = "$welcome";
                 break;
             
             // if there was no valid command, defaults to the "not a valid command" message
@@ -149,7 +149,7 @@ export default {
 
             // if no valid theme was inputted, then show error message
             default:
-                returnedMessage = Messages.themeError;
+                returnedMessage = "$theme_error";
                 break;
         }
 

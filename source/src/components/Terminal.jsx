@@ -6,10 +6,53 @@ import InputLine from "./InputLine";
 import "../css/Terminal.css"
 import Themes from "../js/Themes";
 
-const messages = [Messages.welcome]
+const messages = ["$welcome"]
 
 export default function Terminal() {
     const [text, setText] = createSignal(messages);
+
+    // sets the theme for all relevent objects
+    const setTheme = () => {
+        // set body to theme
+        document.body.style.backgroundColor = Themes.current.col1;
+
+        // set border padding to theme
+        document.getElementById("border-padding").style.borderColor = Themes.current.col1;
+
+        // set terminal outline to theme
+        document.getElementById("border").style.borderColor = Themes.current.col2;
+
+        // get paragraphs
+        var paragraphs = document.getElementsByTagName("p");
+
+        // iterate through paragraphs
+        for(var i = 0; i < paragraphs.length; i++) {
+            // set existing paragraphs to theme
+            paragraphs[i].style.color = Themes.current.col2;
+        }
+
+        // get all existing names
+        var names = document.getElementsByClassName("name");
+
+        // iterate thru names
+        for(var i = 0; i < names.length; i++) {
+            // set name color
+            names[i].style.color = Themes.current.col3;
+        }
+
+        // get all pieces
+        var pieces = document.getElementsByClassName("piece");
+
+        // iterate thru pieces
+        for(var i = 0; i < pieces.length; i++) {
+            // set piece color
+            pieces[i].style.color = Themes.current.col3;
+            pieces[i].style.textShadow = "0px 0px 5px" + Themes.current.col3; // set shadow color to theme as well
+        }
+
+        // set input color
+        document.getElementById("input").style.color = Themes.current.col2;
+    };
 
     return (
         <div id="terminal">
@@ -29,41 +72,53 @@ export default function Terminal() {
                             setText(""); // clear out the text
                         }
                         else if(message === "$theme") { // if message is "$theme"
-                            // set body to theme
-                            document.body.style.backgroundColor = Themes.current.col1;
 
-                            // set border padding to theme
-                            document.getElementById("border-padding").style.borderColor = Themes.current.col1;
-
-                            // set terminal outline to theme
-                            document.getElementById("border").style.borderColor = Themes.current.col2;
-
-                            // get paragraphs
-                            var paragraphs = document.getElementsByTagName("p");
-
-                            // iterate through paragraphs
-                            for(var i = 0; i < paragraphs.length; i++) {
-                                // set existing paragraphs to theme
-                                paragraphs[i].style.color = Themes.current.col2;
-                            }
-
-                            // get all existing names
-                            var names = document.getElementsByClassName("name")
-
-                            // iterate thru names
-                            for(var i = 0; i < names.length; i++) {
-                                // set name color
-                                names[i].style.color = Themes.current.col3;
-                            }
-
-                            // set input color
-                            document.getElementById("input").style.color = Themes.current.col2;
+                            // call setTheme method
+                            setTheme();
 
                             // return message saying theme is set successfully
                             return (
                                 <p style={"color:"+Themes.current.col2}>
 
                                     Theme set successfully!
+
+                                    {/* two line breaks */}
+                                    <br></br><br></br>
+                                </p>
+                            )
+                        }
+                        else if(message === "$theme_error") { // if message is "$theme_error"
+                            // return a theme error with a span that is the quote piece thing
+                            return (
+                                <p style={"color:"+Themes.current.col2}>
+                                    {Messages.themeError}
+
+                                    <span class="piece" style={"color:"+Themes.current.col3}>{Messages.spans.themeError}</span>.
+
+                                    {/* two line breaks */}
+                                    <br></br><br></br>
+                                </p>
+                            )
+                        }
+                        else if(message === "$welcome") { // if message is "$welcome"
+                            // return a welcome message with a span that is the quote piece thing
+                            return (
+                                <p style={"color:"+Themes.current.col2}>
+                                    {Messages.welcome}
+
+                                    <span class="piece" style={"color:"+Themes.current.col3}>{Messages.spans.help}</span>!
+
+                                    {/* two line breaks */}
+                                    <br></br><br></br>
+                                </p>
+                            )
+                        }
+                        else if(message === "$help") {
+                            return (
+                                <p style={"color:"+Themes.current.col2}>
+                                    <span class="piece" style={"color:"+Themes.current.col3}>{Messages.spans.availableCommands}</span>
+
+                                    {Messages.help}
 
                                     {/* two line breaks */}
                                     <br></br><br></br>

@@ -10,11 +10,10 @@ export default {
 \n\
 Welcome to console6677!\n\
 \n\
-Get started by typing `help`!",
+Get started by typing",
 
     // help message
-    help: "Available commands: \n\n\
-help - you just typed it\n\
+    help: "help - you just typed it\n\
 about - a little about me\n\
 clear - clear the console\n\
 github - link to this github repo\n\
@@ -28,7 +27,7 @@ reboot - reboot the console (reloads the page lol)",
     themeHelp: "Theme command, e.g: \ntheme [name] \n\nAvailable themes: [default, gruvbox, gruvbox-light, solarized, solarized-light, dracula]",
 
     // theme error message
-    themeError: "Theme not found, for more info, type `theme help`.",
+    themeError: "Theme not found, for more info, type",
 
     // about message
     about: "Hello! My name is Max, as of the creation of this project i'm 14 and i'm from Ukraine & Canada.\n\n\
@@ -43,4 +42,11 @@ type `contact` for a bit of my contact info.",
 
     // name
     name: "guest@console6677 $",
+
+    // quotes
+    spans: {
+        help: " `help`",
+        themeError: " `theme help`",
+        availableCommands: "Available commands: \n\n",
+    }
 }
