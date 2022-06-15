@@ -134,7 +134,7 @@ export default function Terminal() {
                             return (
                                 <div>
                                     <img 
-                                    src="https://raw.githubusercontent.com/notmax6677/github-stats/8e6a9533a5d6068d8879a48f94b1ba03f5c96204/generated/overview.svg"
+                                    src="https://raw.githubusercontent.com/notmax6677/github-stats/master/generated/overview.svg#gh-dark-mode-only"
                                     alt="user statistics" class="stat-image">
                                     </img>
                                     
@@ -150,7 +150,7 @@ export default function Terminal() {
                             return (
                                 <div>
                                     <img 
-                                    src="https://raw.githubusercontent.com/notmax6677/github-stats/97f8afa4cf2545f9b017dbc974256901acc9c24f/generated/languages.svg"
+                                    src="https://raw.githubusercontent.com/notmax6677/github-stats/master/generated/languages.svg#gh-dark-mode-only"
                                     alt="user statistics (languages version)" class="stat-image">
                                     </img>
                                     
